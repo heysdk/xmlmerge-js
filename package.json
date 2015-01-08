@@ -1,0 +1,12 @@
+{
+  "name": "xmlmerge-js",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./samples/mergexml.js"
+  },
+  "dependencies": {
+    "xmldom": "*",
+    "pretty-data": "*"
+  }
+}
