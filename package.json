@@ -1,7 +1,7 @@
 {
   "name": "xmlmerge-js",
   "description": "merge xml file",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "./xmlmerge.js",
   "keywords": [
     "xml",
