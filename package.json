@@ -1,13 +1,25 @@
 {
   "name": "xmlmerge-js",
+  "description": "merge xml file",
   "version": "0.2.3",
-  "private": true,
-  "scripts": {
-    "start": "node ./samples/mergexml.js"
-  },
+  "main": "./xmlmerge.js",
+  "keywords": [
+    "xml",
+    "merge"
+  ],
   "dependencies": {
     "xmldom": "*",
     "pretty-data": "*",
     "heyutils": "*"
-  }
+  },
+  "repository": {
+    "url": "git://github.com/heysdk/xmlmerge-js.git"
+  },
+  "author": "heysdk",
+  "license": "MIT",
+  "homepage": "https://github.com/heysdk/xmlmerge-js",
+  "bugs": {
+    "url": "https://github.com/heysdk/xmlmerge-js/issues"
+  },
+  "readmeFilename": "README.md"
 }
