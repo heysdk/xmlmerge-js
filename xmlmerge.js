@@ -7,7 +7,7 @@ var XMLSerializer = require('xmldom').XMLSerializer;
 var pd = require('pretty-data').pd;
 var fs = require('fs');
 //var logger = require('./logger');
-var csv2obj = require("./csv2obj");
+var csv2obj = require("heyutils").csv2obj;
 
 //function isInLst(obj, lstNode) {
 //    var max = lstNode.length;

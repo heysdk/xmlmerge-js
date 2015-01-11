@@ -3,7 +3,7 @@
  */
 var xmlmerge = require('../xmlmerge.js');
 var fs = require('fs');
-var csv2obj = require("../csv2obj");
+var csv2obj = require("heyutils").csv2obj;
 
 fs.readFile('samples/AndroidManifest.xml', function(err, data) {
     var str1 = data.toString();
