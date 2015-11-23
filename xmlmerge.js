@@ -243,6 +243,16 @@ function merge(str1, str2, config, callback) {
     callback(str);
 }
 
+function mergeSync(str1, str2, config) {
+    var obj1 = new DOMParser().parseFromString(str1);
+    var obj2 = new DOMParser().parseFromString(str2);
+
+    mergeObj(obj1.documentElement, obj2.documentElement, config);
+
+    var str = pd.xml(new XMLSerializer().serializeToString(obj1));
+    return str;
+}
+
 function mergeWithFile(src1, src2, dest, cfg, callback) {
     fs.readFile(src1, function(err, data) {
         var str1 = data.toString();
@@ -265,5 +275,6 @@ function mergeWithFile(src1, src2, dest, cfg, callback) {
 }
 
 exports.merge = merge;
+exports.mergeSync = mergeSync;
 exports.mergeWithFile = mergeWithFile;
 //exports.mergeAndroidManifest = mergeAndroidManifest;
